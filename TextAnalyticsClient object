@@ -1,0 +1,8 @@
+# run "pip install azure-ai-textanalytics" first to install the package 
+from azure.core.credentials import AzureKeyCredential
+from azure.ai.textanalytics import TextAnalyticsClient
+
+# Create client using endpoint and key
+credential = AzureKeyCredential("YOUR_FOUNDRY_RESOURCE_KEY")
+client = TextAnalyticsClient(endpoint="YOUR_FOUNDRY_RESOURCE_ENDPOINT", 
+                             credential=credential)
